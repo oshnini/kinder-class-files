@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Events Calendar</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="evo-calendar.royal-navy.min.css">
+        <link rel="stylesheet" href="evo-calendar.min.css">
+    </head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            width: 100%;
+            height: 100%;
+            background: #E9F8FF;
+            position: relative;
+        }
+        #calendar {
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <body>
+        <div class="sidebar">
+            <div class="logo_details">
+              <i class="fa fa-navicon" id="btn"></i>
+            </div>
+            <ul class="nav-list">
+              
+              <li>
+                <a href="home.php" class="active">
+                  <i class="fa fa-home"></i>
+                  <span class="link_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+              </li>
+              <li>
+                <a href="class_list.php">
+                  <i class="fa fa-address-book"></i>
+                  <span class="link_name">Class List</span>
+                </a>
+                <span class="tooltip">Class List</span>
+              </li>
+              <li>
+                <a href="performance_tracker.html">
+                  <i class="fa fa-book"></i>
+                  <span class="link_name">Performance Tracker</span>
+                </a>
+                <span class="tooltip">Performance Tracker</span>
+              </li>
+              <li>
+                <a href="event_calendar.html">
+                  <i class="fa fa-calendar"></i>
+                  <span class="link_name">Events Calendar</span>
+                </a>
+                <span class="tooltip">Events Calendar</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-gear"></i>
+                  <span class="link_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+              </li>
+              <li class="profile">
+                <div class="profile_details">
+                  <img src="profile.jpeg" alt="profile image">
+                  <div class="profile_content">
+                    <div class="name">Anna Jhon</div>
+                    <div class="designation">Admin</div>
+                  </div>
+                </div>
+                <i class="fa fa-sign-out" id="log_out"></i>
+              </li>
+            </ul>
+        </div>
+
+        <section class="event_calendar">
+            <div class="hero">
+                <div id="calendar"></div>
+            </div>
+        </section>
+       
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="evo-calendar.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+               
+            })
+        })
+
+    </script>
+</html>

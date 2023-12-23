@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Responsive Sidebar</title>
+  <!-- Link Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="eventscalendar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  </style>
+
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_details">
+          <i class="fa fa-navicon" id="btn"></i>
+        </div>
+        <img src="logo.png" class="website-logo">
+        <ul class="nav-list">
+          <li>
+            <a href="home.php" class="active">
+              <i class="fa fa-home"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+          </li>
+          <li>
+            <a href="class_list.php">
+              <i class="fa fa-address-book"></i>
+              <span class="link_name">Class List</span>
+            </a>
+            <span class="tooltip">Class List</span>
+          </li>
+          <li>
+            <a href="perf_track.html">
+              <i class="fa fa-book"></i>
+              <span class="link_name">Performance Tracker</span>
+            </a>
+            <span class="tooltip">Performance Tracker</span>
+          </li>
+          <li>
+            <a href="eventscalendar.html">
+              <i class="fa fa-calendar"></i>
+              <span class="link_name">Events Calendar</span>
+            </a>
+            <span class="tooltip">Events Calendar</span>
+          </li>
+          <li>
+            <a href="settings.html">
+              <i class="fa fa-gear"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <span class="tooltip">Settings</span>
+          </li>
+          <li class="profile">
+            <div class="profile_details">
+              <img src="profile.jpeg" alt="profile image">
+              <div class="profile_content">
+                <div class="name">Anna Jhon</div>
+                <div class="designation">Admin</div>
+              </div>
+            </div>
+            <i class="fa fa-sign-out" id="log_out"></i>
+          </li>
+        </ul>
+      </div>
+      
+      <section class="home-section">
+        <div class="calendar">
+          <div class="calendar-header">
+              <button id="prevMonthBtn">&lt;</button>
+              <h1 id="currentMonth"></h1>
+              <button id="nextMonthBtn">&gt;</button>
+          </div>
+          <div class="calendar-grid" id="calendarGrid"></div>
+        </div>
+
+
+
+        <div id="reminderModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Add Reminder</h2>
+              <div class="functions">
+                <input type="text" id="reminderInput" placeholder="Enter your reminder..."></input>
+                <button id="saveReminderBtn"><a>Save</a></button>
+              </div>
+          </div>
+      </div>
+    
+    </section>
+  <!-- Scripts -->
+  <script src="script_event.js"></script>
+</body>
+</html>
