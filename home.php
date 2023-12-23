@@ -50,7 +50,6 @@
       </li>
       <li class="profile">
         <div class="profile_details">
-          <img src="profile.jpeg" alt="profile image">
           <div class="profile_content">
             <div class="name">Anna Jhon</div>
             <div class="designation">Admin</div>
